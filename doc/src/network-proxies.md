@@ -1,4 +1,4 @@
-# Working with network proxies
+# Network proxies
 
 Enterprise networks often don't have direct outside HTTP access, but enforce
 the use of proxies. If you're on such a network, you can request that `rustup`

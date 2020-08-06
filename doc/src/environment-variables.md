@@ -5,7 +5,7 @@
   toolchains and configuration options.
 
 - `RUSTUP_TOOLCHAIN` (default: none)
-  If set, will override the toolchain used for all rust tool
+  If set, will [override] the toolchain used for all rust tool
   invocations. A toolchain with this name should be installed, or
   invocations will fail.
 
@@ -28,12 +28,13 @@
 - `RUSTUP_TRACE_DIR` *unstable* (default: no tracing)
   Enables tracing and determines the directory that traces will be
   written too. Traces are of the form PID.trace. Traces can be read
-  by the Catapult project [tracing viewer][tv].
-
-  [tv]: https://github.com/catapult-project/catapult/blob/master/tracing/README.md
+  by the Catapult project [tracing viewer].
 
 - `RUSTUP_UNPACK_RAM` *unstable* (default 400M, min 100M)
   Caps the amount of RAM `rustup` will use for IO tasks while unpacking.
 
 - `RUSTUP_NO_BACKTRACE`
   Disables backtraces on non-panic errors even when `RUST_BACKTRACE` is set.
+
+[override]: overrides.md
+[tracing viewer]: https://github.com/catapult-project/catapult/blob/master/tracing/README.md

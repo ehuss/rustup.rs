@@ -1,10 +1,19 @@
-# Keeping Rust up to date
+# Basic usage
+
+The `rustup` command-line has a built-in help system that provides more
+information about each command. Run `rustup help` for an overview. Detailed
+help for each subcommand is also available. For example, run `rustup toolchain
+install --help` for specifics on installing [toolchains].
+
+[toolchains]: concepts/toolchains.md
+
+## Keeping Rust up to date
 
 Rust is distributed on three different [release channels]: stable, beta, and
 nightly. `rustup` is configured to use the stable channel by default, which
 represents the latest release of Rust, and is released every six weeks.
 
-[release channels]: https://github.com/rust-lang/rfcs/blob/master/text/0507-release-channels.md
+[release channels]: concepts/channels.md
 
 When a new version of Rust is released, you can type `rustup update` to update
 to it:
@@ -29,7 +38,7 @@ info: downloading self-updates
 
 This is the essence of `rustup`.
 
-### Keeping rustup up to date
+## Keeping rustup up to date
 
 Running `rustup update` also checks for updates to `rustup` and automatically
 installs the latest version. To manually check for updates and install the
@@ -42,6 +51,7 @@ info: checking for self-updates
 info: downloading self-updates
 ```
 
-**Note**: `rustup` will automatically update itself at the end of any toolchain
-installation as well.  You can prevent this automatic behaviour by passing the
-`--no-self-update` argument when running `rustup update` or `rustup toolchain install`.
+**Note**: `rustup` will automatically update itself at the end of any
+toolchain installation as well.  You can prevent this automatic behaviour by
+passing the `--no-self-update` argument when running `rustup update` or
+`rustup toolchain install`.
